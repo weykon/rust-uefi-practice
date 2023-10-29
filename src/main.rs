@@ -2,14 +2,11 @@
 #![no_std]
 
 extern crate r_efi;
-
+mod cpu_info;
+mod graphics_info;
+mod memory_info;
 use r_efi::efi;
-
-#[panic_handler]
-fn panic_handler(_info: &core::panic::PanicInfo) -> ! {
-    loop {}
-}
-
+ 
 const HELLO_STR: &str = "Hello, world. Press any key to return to UEFI firmware.";
 
 #[export_name = "efi_main"]

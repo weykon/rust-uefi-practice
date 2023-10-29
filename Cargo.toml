@@ -11,7 +11,9 @@ target = ["x86_64-unkown-uefi"]
 
 [dependencies]
 r-efi = "4"
-
+raw-cpuid = "11.0.1"
+uefi-services = "0.22.0"    
+ 
 # the profile used for `cargo build`
 [profile.dev]
 panic = "abort" # disable stack unwinding on panic
