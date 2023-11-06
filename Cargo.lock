@@ -65,12 +65,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "r-efi"
-version = "4.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "575fc2d9b3da54adbdfaddf6eca48fec256d977c8630a1750b8991347d1ac911"
-
-[[package]]
 name = "raw-cpuid"
 version = "11.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -83,8 +77,8 @@ dependencies = [
 name = "rust-uefi-practice"
 version = "0.1.0"
 dependencies = [
- "r-efi",
  "raw-cpuid",
+ "uefi",
  "uefi-services",
 ]
 

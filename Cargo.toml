@@ -10,7 +10,7 @@ build-stage = 1
 target = ["x86_64-unkown-uefi"]
 
 [dependencies]
-r-efi = "4"
+uefi = { version = "0.25", features = ["alloc"] }
 raw-cpuid = "11.0.1"
 uefi-services = "0.22.0"    
  
